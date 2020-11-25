@@ -20,6 +20,5 @@
         intel ： mov eax, 8
         AT&T ： movl $8, %eax
 
-    
     3.   
 ```
