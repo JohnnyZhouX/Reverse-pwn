@@ -28,10 +28,10 @@
 #### 格式化字符串
 
     漏洞原理
-    ```
+
     程序中提供了参数可控（该格式化字符串参数来自外部输入）的printf族和scanf族函数或错误的参数类型或格式化字符串参数和传入参数个数不一致等情况，这导致我们可以控制程序行为或泄露一些信息
     1.参数完全可控
- 
+    
  #include <stdlib.h>
 #include <stdio.h>
 #include <windows.h>
@@ -50,4 +50,4 @@ int main(int argc, char** argv) {
 	printf("\n");
 	return 0;
 }
- ```
+
