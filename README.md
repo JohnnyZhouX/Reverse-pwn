@@ -41,23 +41,17 @@
     %N$ - 第N个参数
 
     1.参数完全可控
-    
-	#include <stdlib.h>
+
 	#include <stdio.h>
-	#include <windows.h>
+	#include <string.h>
 
-	int main(int argc, char** argv) {
-		if (argc < 3) {
-			printf("Input fmtstr!\n");
-			exit(-1);
-		}
+	int main (int argc, char *argv[])
+	{
+		char buff[1024];    // 设置栈空间
 
-		char* fmt = argv[1];
-		char* args = argv[2];
+		strncpy(buff,argv[1],sizeof(buff)-1);
+		printf(buff); //触发漏洞
 
-		printf(fmt);
-		printf(fmt, args);
-		printf("\n");
 		return 0;
 	}
 ```
