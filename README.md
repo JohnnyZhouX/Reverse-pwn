@@ -100,7 +100,7 @@
 		char ch2 = 'b';
 		char *Pchar;
 
-	    Pchar = &ch1;
+	        Pchar = &ch1;
 		Printchar(Pchar); //正常使用
 
 		Pchar = &ch2;
