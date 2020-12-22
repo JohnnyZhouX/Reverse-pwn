@@ -79,4 +79,43 @@
 ```
 #### uaf
 
+#### HOOk技术相关
+```
+	Hook技术分类：
+	1.修改数据，通常指引用函数的地址（Address Hook）
+	2.修改函数指令Hook(Inline Hook)
+
+	两种hook方法 举例：
+
+	#include "stdio.h"
+
+	void Printchar(char *pch)
+	{
+		printf("address = 0x%x char = %c\n", pch, *pch);
+	}
+
+	int main(int argc, char* argv[])
+	{
+		char ch1 = 'a';
+		char ch2 = 'b';
+		char *Pchar;
+
+	    Pchar = &ch1;
+		Printchar(Pchar); //正常使用
+
+		Pchar = &ch2;
+		Printchar(Pchar); //address hook,修改地址
+
+		Pchar = &ch1;//恢复初值
+
+		*Pchar = 'b'; // Inline hook地址不变，修改内容
+
+		Printchar(Pchar);
+
+		return 0;
+
+	}
+
+```
+
 
