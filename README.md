@@ -11,6 +11,15 @@
         段寄存器：cs,ss,ds,es,fs,gs
         标志寄存器：EFLAGS
         指令指针：EIP
+	
+	EAX    eax是累加器，在做加法和乘法运算的时候，eax是默认寄存器    
+    	EBX    ebx是基地址寄存器，通常被用于寻址    
+	ECX    ecx是计数器，通常用于循环计数    
+	EDX    edx通常用于存放除法运算产生的余数    
+	ESI     esi是源寄存器，通常在字符串操作中使用
+	EDI    edi与esi对应，edi表示目标寄存器    
+	EBP    ebp是基址指针，通常用于指向栈底    
+	ESP    esp是堆栈指针，与ebp对应，通常指向栈顶
         
         汇编指令
         MOV,LEA,ADD/SUB,PUSH,POP,CMP,JMP,J[condition],CALL,LEAVE,RET,.....
