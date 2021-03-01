@@ -158,18 +158,14 @@ int main()
 	DWOrD(dw) 一个双字节，32位的无符号数值
 	Handdles(H) 一个对象索引，如HModule，HInstance，Hkey 
 	Long Pointer(L) 一个指向另一个类型的指针，例如LPByte是指向字节的指针，LPCSTR是指向字符串的指针，字符串通常是由LP作为前缀的，因为实际指针。
-	Callback 表示一个将会被Windows API 调用的函数。例如InternetSetStatusCallback 函数传递一个函数指针，当系统有Internet连接状态的更新时回调用这个函数
+	Callback 表示一个将会被Windows API 调用的函数。例如InternetSetStatusCallback 函数传递一个函数指针，当系统有Internet连接状态的更新时回调用这个函数。
+			
+	句柄 句柄是windows操作系统中打开一个窗口，进程，模块，菜单，文件，等创建的值，通常用来作为函数调用中引用的对象（不能把hwnd作为一个指针或者数值使用
 		
-		
-		
-	
-	
-	
-	
-	
-	
+文件系统函数
 	
 进程列表读取
+
 
 
 2.IDA,OD,winDBG使用
