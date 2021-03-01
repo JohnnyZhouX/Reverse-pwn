@@ -159,7 +159,9 @@ int main()
 	Handdles(H) 一个对象索引，如HModule，HInstance，Hkey 
 	Long Pointer(L) 一个指向另一个类型的指针，例如LPByte是指向字节的指针，LPCSTR是指向字符串的指针，字符串通常是由LP作为前缀的，因为实际指针。
 	Callback 表示一个将会被Windows API 调用的函数。例如InternetSetStatusCallback 函数传递一个函数指针，当系统有Internet连接状态的更新时回调用这个函数
-	
+		
+		
+		
 	
 	
 	
